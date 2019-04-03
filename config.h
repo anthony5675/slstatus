@@ -63,13 +63,13 @@ static const char unknown_str[] = "n/a";
  */
 static const struct arg args[] = {
 	/* function format          argument */
-	{ vol_perc, "[V: %s%] ", "/dev/mixer1"},
-	{ temp, "[T: %sC] ", "/sys/class/thermal/thermal_zone0/temp"},
-	{ cpu_perc, "[C: %s%] ", NULL},
-	{ ram_perc, "[R: %s%] ", NULL},
-	{ disk_perc, "[D: %s%] ", "/"},
-	{ battery_perc, "[B: %s%] ", "BAT0"},
-	{ ipv4, "[W: %s] " , "wlp2s0"},
-	{ datetime, "[%s] ", "%F" },
-	{ datetime, "[%s]", "%r"},
+	{ vol_perc, "  [V: %s%] ", "/dev/mixer1"},
+	{ temp, " [T: %sC] ", "/sys/class/thermal/thermal_zone0/temp"},
+	{ cpu_perc, " [C: %s%] ", NULL},
+	{ ram_perc, " [R: %s%] ", NULL},
+	{ disk_perc, " [D: %s%] ", "/"},
+	{ battery_perc, " [B: %s%] ", "BAT0"},
+	{ uptime, " [U: %s] " , NULL},
+	{ datetime, " [%s] ", "%F" },
+	{ datetime, " [%s]  ", "%r"},
 };
